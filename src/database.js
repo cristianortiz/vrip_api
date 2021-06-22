@@ -1,4 +1,4 @@
-require("dotenv").config({ path: "vars.env" });
+require("dotenv").config({ path: ".env" });
 const mysql = require("mysql");
 const mysqlConnection = mysql.createConnection({
   host: process.env.DB_HOST,
