@@ -10,6 +10,8 @@ app.use(express.json()); //to access json data
 
 //Routes
 app.use("/investigadores", require("./routes/investigadoresRoutes"));
+app.use("/programas", require("./routes/programasRoutes"));
+
 
 app.listen(app.get("port"), () => {
   console.log("...Running on port", app.get("port"));
