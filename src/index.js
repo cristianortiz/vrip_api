@@ -3,7 +3,7 @@ const express = require("express"); //return express object
 //creates the server
 const app = express();
 //Settings
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 4000);
 
 //Middleware
 app.use(express.json()); //to access json data
