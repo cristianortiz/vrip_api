@@ -53,7 +53,7 @@ exports.getClaustrosAcademicos = async(req, res) => {
 function getProgramasPostgrado() {
  return new Promise((res,rej)=>{
   mysqlConnection.query(
-    "SELECT id, nombre_programa FROM programa_postgrado WHERE estado='activo'",
+    "SELECT id, nombre_programa,icon FROM programa_postgrado WHERE estado='activo'",
     (err, rows, fields) => {
       if (!err) {
         return res(rows)
